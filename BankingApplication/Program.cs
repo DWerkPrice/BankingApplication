@@ -16,14 +16,14 @@ namespace BankingApplication
             int1.debug();
 
 
-            var chk1 = new Account();
+            var chk1 = new Checking();
             chk1.Deposit(100);
             chk1.Withdraw(75);
             chk1.Deposit(-10);
             chk1.Withdraw(1000);
             chk1.Deposit(0);
             chk1.Withdraw(100);
-            var chk2 = new Account();
+            var chk2 = new Checking();
             chk2.Deposit(200);
             chk2.Withdraw(40);
 //            chk1.debug();
@@ -38,8 +38,8 @@ namespace BankingApplication
             var accounts = new List<Account>();
             accounts.Add(sav1);
             accounts.Add(int1);
-            accounts.Add(chk1);
-            accounts.Add(chk2);
+  //          accounts.Add(chk1);
+  //          accounts.Add(chk2);
 
             foreach(var account in accounts) {
                 Console.WriteLine(account);
